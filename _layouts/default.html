@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>{{ page.title }}</title>
+			<!-- link to main stylesheet -->
+			<link rel="stylesheet" type="text/css" href="/css/main.css">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<!--{% if site.env == 'production' %}
+ 			 <link rel="stylesheet" href="/build/style.min.css">
+			{% else %}
+ 			 <link rel="stylesheet" href="/debug/style.css">
+			{% endif %}-->
+		</head>
+		<body>
+		 <header>
+      	<h1> Carly Chubak </h1>
+   		 </header>
+			<nav>
+	    		<ul>
+	        		<li><a href="/">Home</a></li>
+	        		<li><a href="/subjects">Subjects</a></li>
+              <li><a href="/avail">Availability</a></li>
+	        		<li><a href="/contact">Contact</a></li>
+	    		</ul>
+			</nav>
+			<div class="container">
+			
+			{{ content }}
+			
+			</div><!-- /.container -->
+			<footer>
+	    		<ul>
+	        		<li><a href="mailto:cachubak@gmail.com">email</a></li>
+	        		<li><a href="www.linkedin.com/in/carlychubak">linkedin</a></li>
+				</ul>
+      			<p>&copy; Carly Chubak 2018 | All Rights Reserved. </p>
+			</footer>
+		</body>
+	</html>
